@@ -20,4 +20,16 @@ export class UIInfoPanel extends UIElement {
   init() {}
 
   onUpdate(state) {}
+
+  /**
+   * @param {UIInfoPanelMessage} uiElement
+   */
+  addElement(uiElement) {
+    this.elements.push(uiElement);
+    this.element.appendChild(uiElement.element);
+    this.element.scrollTo({
+      top: this.element.getBoundingClientRect().bottom,
+      behavior: "smooth",
+    });
+  }
 }

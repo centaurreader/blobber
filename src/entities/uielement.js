@@ -7,6 +7,9 @@
  */
 
 export class UIElement {
+  /** @type {HTMLElement} */
+  element;
+
   tagName = null;
 
   elementId = null;
