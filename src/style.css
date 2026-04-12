@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: lightgray;
+
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#logo {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#app {
+  margin: 3rem auto;
+  max-width: 33rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+}
+
+.header {
+  border-bottom: 1px solid black;
+  padding: 0.125rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#field {
+  background-color: green;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.enemy {
+  display: flex;
+  flex-direction: column;
+}
+
+#party {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background: gray;
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  position: relative;
+}
+.skill__label {
+  position: relative;
+  z-index: 2;
+}
+.skill__slider {
+  background: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.skill__slider__value {
+  background: blue;
+  height: 100%;
+}
+
+#info_panel {
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
