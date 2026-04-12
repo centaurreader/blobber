@@ -1,0 +1,21 @@
+export const data = {
+  characters: [
+    "Angbar",
+    "Ekrim",
+    "Matlo",
+    "Chrysmann",
+    "Bogo",
+    "Chim",
+    "Bigmin",
+    "Soph",
+    "Rench",
+    "Wedge",
+    "Biggs",
+    "Wurt",
+    "Khan",
+    "Zeeb",
+    "Kurd",
+    "Cob",
+    "Magnus",
+  ],
+};

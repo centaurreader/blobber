@@ -14,7 +14,6 @@ export class Enemy {
     this.name = name;
     this.currentHp = hp;
     this.skills = skills;
-    this.skills.forEach((skill) => (skill.mod = this.level));
   }
 }
 

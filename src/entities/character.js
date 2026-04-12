@@ -14,7 +14,6 @@ export class Character {
     this.maxHp = 100;
     this.currentHp = 100;
     this.skills = skills;
-    this.skills.forEach((skill) => (skill.mod = this.level));
   }
 }
 

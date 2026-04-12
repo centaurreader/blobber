@@ -3,25 +3,28 @@ import { UIElement } from "./uielement.js";
 export class Skill {
   name;
 
-  cooldown;
+  level = 1;
 
-  /** @type {number} */
-  mod;
+  cooldown;
 
   /**
    *
    * @param {{
    *   name: string;
    *   cooldown: number;
+   *   level?: number;
    * }} config
    */
-  constructor({ name, cooldown }) {
+  constructor({ name, cooldown, level }) {
     this.name = name;
     this.cooldown = cooldown;
+    if (level) {
+      this.level = level;
+    }
   }
 
   get cooldownValue() {
-    return this.cooldown / this.mod;
+    return this.cooldown / this.level;
   }
 }
 

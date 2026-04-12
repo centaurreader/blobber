@@ -6,6 +6,7 @@ blobber-style rpg game for idle statlord carnage
 
 - [ ] character generator
 - [ ] choose characters + start game
+- [ ] pause and unpause on tab unfocus/focus
 - [ ] combat
   - [ ] kill enemies
   - [ ] kill characters

@@ -90,17 +90,17 @@ const state = new State({
     const char1 = new Character({
       name: "Angbar",
       level: 1,
-      skills: [new Skill({ name: "Punch", cooldown: 10 })],
+      skills: [new Skill({ name: "Punch", cooldown: 10, level: 1 })],
     });
     const char2 = new Character({
       name: "Bogo",
       level: 1,
-      skills: [new Skill({ name: "Claw", cooldown: 5 })],
+      skills: [new Skill({ name: "Claw", cooldown: 5, level: 1 })],
     });
     const char3 = new Character({
       name: "Chrysmann",
       level: 1,
-      skills: [new Skill({ name: "Fireball", cooldown: 20 })],
+      skills: [new Skill({ name: "Fireball", cooldown: 20, level: 1 })],
     });
     const party = new Party({ characters: [char1, char2, char3] });
     const enemies = [
@@ -108,31 +108,31 @@ const state = new State({
         name: "Wizard",
         level: 2,
         hp: 100,
-        skills: [new Skill({ name: "Lightning", cooldown: 80 })],
+        skills: [new Skill({ name: "Lightning", cooldown: 80, level: 4 })],
       }),
       new Enemy({
         name: "Wizard",
         level: 1,
         hp: 100,
-        skills: [new Skill({ name: "Lightning", cooldown: 150 })],
+        skills: [new Skill({ name: "Lightning", cooldown: 150, level: 2 })],
       }),
       new Enemy({
         name: "Slime",
         level: 3,
         hp: 10,
-        skills: [new Skill({ name: "Ooze", cooldown: 30 })],
+        skills: [new Skill({ name: "Ooze", cooldown: 30, level: 3 })],
       }),
       new Enemy({
         name: "Slime",
         level: 4,
         hp: 10,
-        skills: [new Skill({ name: "Ooze", cooldown: 30 })],
+        skills: [new Skill({ name: "Ooze", cooldown: 30, level: 5 })],
       }),
       new Enemy({
         name: "Slime",
         level: 5,
         hp: 10,
-        skills: [new Skill({ name: "Ooze", cooldown: 25 })],
+        skills: [new Skill({ name: "Ooze", cooldown: 25, level: 1 })],
       }),
     ];
     uiInstance.elements.push(new UIField());
