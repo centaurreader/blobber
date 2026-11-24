@@ -24,6 +24,7 @@ export class UICharacter extends UIElement {
   constructor({ character }) {
     super({ tagName: "li", id: crypto.randomUUID() });
     this.character = character;
+    this.name = character.name;
   }
 
   init() {

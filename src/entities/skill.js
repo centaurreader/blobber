@@ -19,12 +19,13 @@ export class Skill {
     this.name = name;
     this.cooldown = cooldown;
     if (level) {
+      console.log(level, name);
       this.level = level;
     }
   }
 
-  get cooldownValue() {
-    return this.cooldown / this.level;
+  get mod() {
+    return this.cooldown / this.level + this.cooldown;
   }
 }
 
@@ -65,10 +66,10 @@ export class UISkill extends UIElement {
 
   onUpdate(state) {
     if (this.value <= 0) {
-      state.addMessage(`${this.parent.id} uses ${this.skill.name}`);
+      state.addMessage(`${this.parent.name} uses ${this.skill.name}`);
       this.value = 100;
     } else {
-      this.value -= 1 / this.skill.cooldownValue;
+      this.value -= 1 / this.skill.mod;
     }
     this.sliderValue.setAttribute("style", `width: ${this.value}%`);
   }

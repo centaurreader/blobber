@@ -32,6 +32,7 @@ export class UIEnemy extends UIElement {
     const { enemy } = config;
     super({ ...config, tagName: "div", id: crypto.randomUUID() });
     this.enemy = enemy;
+    this.name = enemy.name;
   }
 
   init() {

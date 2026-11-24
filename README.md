@@ -8,6 +8,12 @@ blobber-style rpg game for idle statlord carnage
 - [ ] choose characters + start game
 - [ ] pause and unpause on tab unfocus/focus
 - [ ] combat
+  - [ ] calculate damage from skills
+  - [ ] event bus
+  - [ ] element registry to flatten out structure
+  - [ ] indicate damage on entiteis
+  - [ ] indicate skill exec
+  - [ ] update skill message to say what it targeted
   - [ ] kill enemies
   - [ ] kill characters
   - [ ] randomly generate enemies for encounter

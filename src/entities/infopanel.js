@@ -28,7 +28,7 @@ export class UIInfoPanel extends UIElement {
     this.elements.push(uiElement);
     this.element.appendChild(uiElement.element);
     this.element.scrollTo({
-      top: this.element.getBoundingClientRect().bottom,
+      top: this.element.scrollHeight,
       behavior: "smooth",
     });
   }

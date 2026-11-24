@@ -7,6 +7,8 @@
  */
 
 export class UIElement {
+  name = "";
+
   /** @type {HTMLElement} */
   element;
 
@@ -16,7 +18,7 @@ export class UIElement {
 
   elements = [];
 
-  parent = null;
+  parent;
 
   /**
    * @param {UIElementConfig} config
